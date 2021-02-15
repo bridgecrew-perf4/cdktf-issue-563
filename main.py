@@ -11,6 +11,6 @@ class MyStack(TerraformStack):
 
 
 app = App()
-MyStack(app, "cdktf-jsii-TS6133")
+MyStack(app, "cdktf-issue-563")
 
 app.synth()
