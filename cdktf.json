@@ -1,0 +1,17 @@
+{
+  "language": "python",
+  "app": "python3 ./main.py",
+  "terraformProviders": [
+    "aws@~> 2.0"
+  ],
+  "terraformModules": [
+    "terraform-aws-modules/cloudwatch/aws",
+    "terraform-aws-modules/iam/aws",
+    "terraform-aws-modules/route53/aws"
+  ],
+  "codeMakerOutput": "imports",
+  "context": {
+    "excludeStackIdFromLogicalIds": "true",
+    "allowSepCharsInLogicalIds": "true"
+  }
+}
